@@ -3,8 +3,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Login } from './src/screens/Login';
 import { Home } from './src/screens/Home';
-import { ItemDetails } from './src/screens/ItemDetails';
-import { ExtraPage } from './src/screens/ExtraPage';
+import { PokemonImage } from './src/screens/PokemonImages';
+import { PokemonDetail } from './src/screens/PokemonDetail';
+
+
 
 const Stack = createNativeStackNavigator();
 
@@ -14,10 +16,13 @@ const Stack = createNativeStackNavigator();
       <Stack.Navigator>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="ItemDetails" component={ItemDetails} />
-        <Stack.Screen name="ExtraPage" component={ExtraPage} />
+        <Stack.Screen name="PokemonDetail" component={PokemonDetail} />
+        <Stack.Screen name="PokemonImage" component={PokemonImage} /> 
       </Stack.Navigator>
     </NavigationContainer>
+    // <View>
+    //   <Form />
+    // </View>
   );
 };
 
